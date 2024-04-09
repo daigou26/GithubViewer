@@ -9,16 +9,32 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "SharedModules",
-            targets: ["SharedModules"])
+            name: "Model",
+            targets: ["Model"]),
+        .library(
+            name: "Repository",
+            targets: ["Repository"]),
+        .library(
+            name: "UseCase",
+            targets: ["UseCase"]),
+        .library(
+            name: "Component",
+            targets: ["Component"])
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
+        .target(name: "Model"),
         .target(
-            name: "SharedModules"),
-        .testTarget(
-            name: "SharedModulesTests",
-            dependencies: ["SharedModules"])
+            name: "Repository",
+            dependencies: ["UseCase"]
+        ),
+        .target(
+            name: "UseCase",
+            dependencies: ["Model"]
+        ),
+        .target(
+            name: "Component"
+        )
     ]
 )

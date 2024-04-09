@@ -7,18 +7,21 @@ let package = Package(
     name: "FeatureModules",
     platforms: [.iOS(.v16)],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "FeatureModules",
-            targets: ["FeatureModules"])
+            name: "Search",
+            targets: ["Search"])
+    ],
+    dependencies: [
+        .package(path: "../SharedModules")
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "FeatureModules"),
-        .testTarget(
-            name: "FeatureModulesTests",
-            dependencies: ["FeatureModules"])
+            name: "Search",
+            dependencies: [
+                .product(name: "UseCase", package: "SharedModules"),
+                .product(name: "Repository", package: "SharedModules"),
+                .product(name: "Component", package: "SharedModules")
+            ]
+        )
     ]
 )

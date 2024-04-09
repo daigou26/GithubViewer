@@ -14,6 +14,7 @@
 		C01A56912B81F5B9007CFAB5 /* GithubViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A56902B81F5B9007CFAB5 /* GithubViewerTests.swift */; };
 		C01A569B2B81F5B9007CFAB5 /* GithubViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A569A2B81F5B9007CFAB5 /* GithubViewerUITests.swift */; };
 		C01A569D2B81F5B9007CFAB5 /* GithubViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A569C2B81F5B9007CFAB5 /* GithubViewerUITestsLaunchTests.swift */; };
+		C05218752BC280DF00905C23 /* Search in Frameworks */ = {isa = PBXBuildFile; productRef = C05218742BC280DF00905C23 /* Search */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C05218752BC280DF00905C23 /* Search in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +78,13 @@
 		C01A56732B81F5AB007CFAB5 = {
 			isa = PBXGroup;
 			children = (
-				C01A56AA2B81F79E007CFAB5 /* FeatureModules */,
 				C01A56A92B81F77A007CFAB5 /* SharedModules */,
+				C01A56AA2B81F79E007CFAB5 /* FeatureModules */,
 				C01A567E2B81F5AB007CFAB5 /* GithubViewer */,
 				C01A568F2B81F5B9007CFAB5 /* GithubViewerTests */,
 				C01A56992B81F5B9007CFAB5 /* GithubViewerUITests */,
 				C01A567D2B81F5AB007CFAB5 /* Products */,
+				C0A9184C2B943C260092922A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +134,13 @@
 			path = GithubViewerUITests;
 			sourceTree = "<group>";
 		};
+		C0A9184C2B943C260092922A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +158,9 @@
 			dependencies = (
 			);
 			name = GithubViewer;
+			packageProductDependencies = (
+				C05218742BC280DF00905C23 /* Search */,
+			);
 			productName = GithubViewer;
 			productReference = C01A567C2B81F5AB007CFAB5 /* GithubViewer.app */;
 			productType = "com.apple.product-type.application";
@@ -446,7 +459,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GithubViewer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "GithubViewer/Preview\\ Content";
 				DEVELOPMENT_TEAM = G4WY3C4456;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -479,7 +492,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GithubViewer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "GithubViewer/Preview\\ Content";
 				DEVELOPMENT_TEAM = G4WY3C4456;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -621,6 +634,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C05218742BC280DF00905C23 /* Search */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Search;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C01A56742B81F5AB007CFAB5 /* Project object */;
 }
