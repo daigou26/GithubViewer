@@ -16,8 +16,8 @@ public class SearchViewModel: ObservableObject {
     @Published var errorMessage = ""
     var cancellables = Set<AnyCancellable>()
 
-    let githubUseCase: GithubUseCase
-    public init(githubUseCase: GithubUseCase) {
+    let githubUseCase: GithubUseCaseProtocol
+    public init(githubUseCase: GithubUseCaseProtocol) {
         self.githubUseCase = githubUseCase
     }
 

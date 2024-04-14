@@ -15,6 +15,11 @@
 		C01A569B2B81F5B9007CFAB5 /* GithubViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A569A2B81F5B9007CFAB5 /* GithubViewerUITests.swift */; };
 		C01A569D2B81F5B9007CFAB5 /* GithubViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A569C2B81F5B9007CFAB5 /* GithubViewerUITestsLaunchTests.swift */; };
 		C05218752BC280DF00905C23 /* Search in Frameworks */ = {isa = PBXBuildFile; productRef = C05218742BC280DF00905C23 /* Search */; };
+		C052187F2BCC305000905C23 /* SearchSandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C052187E2BCC305000905C23 /* SearchSandboxApp.swift */; };
+		C05218812BCC305000905C23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05218802BCC305000905C23 /* ContentView.swift */; };
+		C05218832BCC305200905C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05218822BCC305200905C23 /* Assets.xcassets */; };
+		C05218862BCC305200905C23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05218852BCC305200905C23 /* Preview Assets.xcassets */; };
+		C052188B2BCC308100905C23 /* Search in Frameworks */ = {isa = PBXBuildFile; productRef = C052188A2BCC308100905C23 /* Search */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,12 @@
 		C01A569C2B81F5B9007CFAB5 /* GithubViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C01A56A92B81F77A007CFAB5 /* SharedModules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SharedModules; sourceTree = "<group>"; };
 		C01A56AA2B81F79E007CFAB5 /* FeatureModules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureModules; sourceTree = "<group>"; };
+		C05218772BCC2F1400905C23 /* GithubViewer.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GithubViewer.xctestplan; sourceTree = "<group>"; };
+		C052187C2BCC305000905C23 /* SearchSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C052187E2BCC305000905C23 /* SearchSandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSandboxApp.swift; sourceTree = "<group>"; };
+		C05218802BCC305000905C23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C05218822BCC305200905C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C05218852BCC305200905C23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,17 +83,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C05218792BCC305000905C23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C052188B2BCC308100905C23 /* Search in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		C01A56732B81F5AB007CFAB5 = {
 			isa = PBXGroup;
 			children = (
+				C05218772BCC2F1400905C23 /* GithubViewer.xctestplan */,
 				C01A56A92B81F77A007CFAB5 /* SharedModules */,
 				C01A56AA2B81F79E007CFAB5 /* FeatureModules */,
 				C01A567E2B81F5AB007CFAB5 /* GithubViewer */,
 				C01A568F2B81F5B9007CFAB5 /* GithubViewerTests */,
 				C01A56992B81F5B9007CFAB5 /* GithubViewerUITests */,
+				C052187D2BCC305000905C23 /* SearchSandbox */,
 				C01A567D2B81F5AB007CFAB5 /* Products */,
 				C0A9184C2B943C260092922A /* Frameworks */,
 			);
@@ -94,6 +115,7 @@
 				C01A567C2B81F5AB007CFAB5 /* GithubViewer.app */,
 				C01A568C2B81F5B9007CFAB5 /* GithubViewerTests.xctest */,
 				C01A56962B81F5B9007CFAB5 /* GithubViewerUITests.xctest */,
+				C052187C2BCC305000905C23 /* SearchSandbox.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +154,25 @@
 				C01A569C2B81F5B9007CFAB5 /* GithubViewerUITestsLaunchTests.swift */,
 			);
 			path = GithubViewerUITests;
+			sourceTree = "<group>";
+		};
+		C052187D2BCC305000905C23 /* SearchSandbox */ = {
+			isa = PBXGroup;
+			children = (
+				C052187E2BCC305000905C23 /* SearchSandboxApp.swift */,
+				C05218802BCC305000905C23 /* ContentView.swift */,
+				C05218822BCC305200905C23 /* Assets.xcassets */,
+				C05218842BCC305200905C23 /* Preview Content */,
+			);
+			path = SearchSandbox;
+			sourceTree = "<group>";
+		};
+		C05218842BCC305200905C23 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C05218852BCC305200905C23 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		C0A9184C2B943C260092922A /* Frameworks */ = {
@@ -201,6 +242,26 @@
 			productReference = C01A56962B81F5B9007CFAB5 /* GithubViewerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C052187B2BCC305000905C23 /* SearchSandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C05218892BCC305200905C23 /* Build configuration list for PBXNativeTarget "SearchSandbox" */;
+			buildPhases = (
+				C05218782BCC305000905C23 /* Sources */,
+				C05218792BCC305000905C23 /* Frameworks */,
+				C052187A2BCC305000905C23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchSandbox;
+			packageProductDependencies = (
+				C052188A2BCC308100905C23 /* Search */,
+			);
+			productName = SearchSandbox;
+			productReference = C052187C2BCC305000905C23 /* SearchSandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,6 +283,9 @@
 						CreatedOnToolsVersion = 15.1;
 						TestTargetID = C01A567B2B81F5AB007CFAB5;
 					};
+					C052187B2BCC305000905C23 = {
+						CreatedOnToolsVersion = 15.1;
+					};
 				};
 			};
 			buildConfigurationList = C01A56772B81F5AB007CFAB5 /* Build configuration list for PBXProject "GithubViewer" */;
@@ -240,6 +304,7 @@
 				C01A567B2B81F5AB007CFAB5 /* GithubViewer */,
 				C01A568B2B81F5B9007CFAB5 /* GithubViewerTests */,
 				C01A56952B81F5B9007CFAB5 /* GithubViewerUITests */,
+				C052187B2BCC305000905C23 /* SearchSandbox */,
 			);
 		};
 /* End PBXProject section */
@@ -265,6 +330,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C052187A2BCC305000905C23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C05218862BCC305200905C23 /* Preview Assets.xcassets in Resources */,
+				C05218832BCC305200905C23 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +388,15 @@
 			files = (
 				C01A569B2B81F5B9007CFAB5 /* GithubViewerUITests.swift in Sources */,
 				C01A569D2B81F5B9007CFAB5 /* GithubViewerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C05218782BCC305000905C23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C05218812BCC305000905C23 /* ContentView.swift in Sources */,
+				C052187F2BCC305000905C23 /* SearchSandboxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +677,66 @@
 			};
 			name = Release;
 		};
+		C05218872BCC305200905C23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SearchSandbox/Preview Content\"";
+				DEVELOPMENT_TEAM = G4WY3C4456;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SearchSandbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C05218882BCC305200905C23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SearchSandbox/Preview Content\"";
+				DEVELOPMENT_TEAM = G4WY3C4456;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SearchSandbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -633,10 +776,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C05218892BCC305200905C23 /* Build configuration list for PBXNativeTarget "SearchSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05218872BCC305200905C23 /* Debug */,
+				C05218882BCC305200905C23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		C05218742BC280DF00905C23 /* Search */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Search;
+		};
+		C052188A2BCC308100905C23 /* Search */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Search;
 		};

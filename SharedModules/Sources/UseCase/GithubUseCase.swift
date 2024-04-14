@@ -6,6 +6,7 @@ import Foundation
 import Combine
 import Model
 
+/// @mockable
 public protocol GithubUseCaseProtocol {
     func search(keyword: String) -> AnyPublisher<[GitHubRepository], APIError>
 }
