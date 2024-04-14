@@ -5,12 +5,13 @@
 import SwiftUI
 import Combine
 import Search
+import UseCase
 import Repository
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            SearchScreen(viewModel: .init(githubUseCase: .init(repository: GithubSearchRepository())))
+            SearchScreen(viewModel: .init(githubUseCase: GithubUseCase(repository: GithubSearchRepository())))
         }
         .padding()
     }

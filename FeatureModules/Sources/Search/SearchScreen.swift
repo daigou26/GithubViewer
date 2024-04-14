@@ -21,7 +21,7 @@ public struct SearchScreen: View {
                 SearchTextField(keyword: $viewModel.keyword) {
                     viewModel.search()
                 }
-                
+
                 ScrollView {
                     LazyVStack {
                         ForEach(Array(viewModel.repositories.enumerated()), id: \.offset) { _, repository in

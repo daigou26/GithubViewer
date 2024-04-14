@@ -22,6 +22,7 @@ let package = Package(
                 .product(name: "Repository", package: "SharedModules"),
                 .product(name: "Component", package: "SharedModules")
             ]
-        )
+        ),
+        .testTarget(name: "SearchTests", dependencies: ["Search"])
     ]
 )
