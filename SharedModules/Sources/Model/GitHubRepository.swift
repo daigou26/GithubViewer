@@ -13,4 +13,24 @@ public struct GitHubRepository: Codable {
     public let description: String?
     public let language: String?
     public let stargazersCount: Int
+
+    public init(
+        id: Int,
+        name: String,
+        fullName: String,
+        owner: GitHubRepositoryOwner,
+        htmlUrl: URL,
+        description: String? = nil,
+        language: String? = nil,
+        stargazersCount: Int
+    ) {
+        self.id = id
+        self.name = name
+        self.fullName = fullName
+        self.owner = owner
+        self.htmlUrl = htmlUrl
+        self.description = description
+        self.language = language
+        self.stargazersCount = stargazersCount
+    }
 }

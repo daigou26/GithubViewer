@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "3D0961AA-12AF-45F3-A66E-988B5C08A860",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:FeatureModules",
+        "identifier" : "SearchTests",
+        "name" : "SearchTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:GithubViewer.xcodeproj",
+        "identifier" : "C01A568B2B81F5B9007CFAB5",
+        "name" : "GithubViewerTests"
+      }
+    }
+  ],
+  "version" : 1
+}
